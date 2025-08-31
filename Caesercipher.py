@@ -1,4 +1,5 @@
 alphabet=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+## Encryption Function
 def encryption(plain_text,shift):
     cipher_text=""
     for char in plain_text:
@@ -9,7 +10,7 @@ def encryption(plain_text,shift):
         else: 
             cipher_text+=char
     print(f"Text after Encryption : {cipher_text}")
-
+    ## Decryption Function
 def decryption(cipher_text,shift):
     plain_text=""
     for char in cipher_text:
@@ -20,7 +21,7 @@ def decryption(cipher_text,shift):
         else:
             plain_text+=char
     print(f"Text after Encryption : {plain_text}")
-
+## Main Function
 end=False
 while not end :
     choice =input("Type 'cipher' to encrpyt the message,'decipher' to decrypt the message \n")
@@ -32,4 +33,5 @@ while not end :
       decryption(cipher_text=text,shift=shiftkey) 
     exit=input("Enter 'Yes' to continue,'No' to exit\n")
     if(exit=="No"):
+
         end=True
