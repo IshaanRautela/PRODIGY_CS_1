@@ -10,7 +10,7 @@ def encryption(plain_text,shift):
         else: 
             cipher_text+=char
     print(f"Text after Encryption : {cipher_text}")
-    ## Decryption Function
+## Decryption Function
 def decryption(cipher_text,shift):
     plain_text=""
     for char in cipher_text:
@@ -35,3 +35,4 @@ while not end :
     if(exit=="No"):
 
         end=True
+
